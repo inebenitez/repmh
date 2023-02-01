@@ -6,21 +6,26 @@
 
 body{
     font-family: "Comic Sans Ms";
+    margin: 0;
 }
 
 header{
-    position: relative;
+    display: flex;
     width: 100%;
+    height: 48vh;
+    padding: 0rem;
+    border: 1px solid black;
+    background-image: url(./img/design1_image2.jpg);
 }
 
 /*banner*/
-header>div{
+/* header>div{
     background-image: url(./img/design1_image2.jpg);
     height: 280px;
     background-position: 2%;
-}
+} */
 
-/*titulo principal*/
+/* titulo principal */
 header>h1{
     font-style: italic;
     font-size: 48px;
@@ -58,13 +63,12 @@ section>h2{
     font-size: 38px;
     width: 100%;
 }
-    
+
 /**Seccion de Articulo Home y Contact*/
 section{
     position: relative;
     display: inline-block;
     width: 100%;
-    /*vertical-align: top;*/
 }
 
 /*logo Home About Contact*/
@@ -74,24 +78,23 @@ section{
     width: 8%;
     margin-top: 60px;
     margin-left: 45px;
-    /*border: 2px solid black;*/
 }
 
-/*Aticulo central home y contact*/
+/* Aticulo central home y contact*/
 .articulo{
     position: absolute;
     display: inline-block;
     width: 45%;
     margin-left: 260px;
     margin-top: 40px;
-    /*border: 2px solid black;*/
-}
+} 
 
 /*texto Home*/
 article>h3{
     font-weight: bold;
     font-size: 22px;
 }
+
  /*texto general*/
 p{
     text-indent: 40px;
@@ -110,7 +113,6 @@ section>h3{
     width: 25%;
     margin-top: 40px;
     margin-left: 1100px;
-    /*border: 2px solid black;*/
 }
 
 /*imagen about*/
@@ -120,7 +122,6 @@ section>h3{
     width: 24%;
     margin-top: 40px;
     margin-left: 1100px;
-    /*border: 2px solid black;*/
 }
 
 /*imagen contacto*/
@@ -130,26 +131,112 @@ section>h3{
     width: 24%;
     margin-top: 40px;
     margin-left: 1100px;
-    /*border: 2px solid black;*/
 }
 
 /*footer*/
 footer{
-    position: absolute;
-    width: 100%;
-    top: 750px;
-    text-align-last: center;
+    height: 3vh;
     background-color: rgb(236, 235, 235);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%;
+    top: 750px;
+    text-align-last: center; */
 }
 
 .footerabout{
-    position: absolute;
-    width: 100%;
-    top: 1000px;
-    text-align-last: center;
+    height: 3vh;
     background-color: rgb(236, 235, 235);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%;
+    top: 1000px; */
 }
 
 footer>p{
     font-size: 14px;
 }
+
+
+
+
+
+
+
+
+
+
+
+/*header con logo y nav a eleccion*/
+/* .header2{
+    display: flex;
+    min-height: 70px;
+    background-color: #4472c4;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-direction:column;*/
+    /* max-width: 700px; */
+}
+
+/* a{
+    text-decoration: none;
+    color: black;
+} */
+
+/* .logo2{
+    display: flex;
+    align-items: center;
+}
+
+.logo2 img{
+    height: 60px;
+    margin-right: 10px;
+}
+
+.menuGI{
+    padding: 10px 0px;
+}
+.menuGI>a{
+    font-weight: 600px;
+    padding-right: 10px;
+}
+
+.menuGI:hover{
+    color: white;    
+} */
+
+/*Cuerpo*/
+/* .home{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.in-flex{
+    flex: 1 ;
+    min-width: 250px;
+    padding: 25px;
+    margin: 25px;
+}
+
+.in-flex:first-child{
+    flex: 1;
+    background-color: #4472c4;
+    margin: 25px;
+}
+
+.in-flex:nth-child(2){
+    flex: 1;
+    background-color: #4472c4;
+    margin: 20px;
+}
+
+.in-flex div {
+    padding: 25px;
+    background-color: #4472c4;
+    margin: 20px;
+} */
