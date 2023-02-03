@@ -5,151 +5,207 @@
 }
 
 body{
-    font-family: "Comic Sans Ms";
+    margin: 0;
+    font-family: georgia;
+    background-color: rgb(201, 199, 199);
 }
 
+.body2{
+    margin: 0 6rem;
+    background-color: rgb(238, 238, 238);
+    
+}
+
+/*header con logo y nav*/
 header{
-    position: relative;
-    width: 100%;
+    display: flex;
+    min-height: 70px;
+    background-color: rgb(46, 46, 46);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-direction:column;
 }
 
-/*banner*/
-header>div{
-    background-image: url(./img/design1_image2.jpg);
-    height: 280px;
-    background-position: 2%;
+a{
+    text-decoration: none;
+    color: rgb(243, 242, 242);
+    font-size: 22px;
+    border-radius: 5px;
+    background-image: linear-gradient(currentColor, orange);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
 }
 
-/*titulo principal*/
-header>h1{
-    font-style: italic;
-    font-size: 48px;
+.logo{
+    display: flex;
+    align-items: center;
+    border: inherit;
 }
 
-/*Menu navegacion*/
+.logo img{
+    height: 60px;
+    margin-right: 10px;
+}
+
 nav{
-    position: absolute ;
-    top: 55px;
-    right: 3%;
+    padding: 10px 0px;
 }
 
 nav>a{
-    border: 2px solid black;
-    box-shadow: 8px 2px 2px grey;
-    background-color: #4472c4 ;
-    color: white;
-    padding: 5px 28px;
-    text-decoration: none;
-    font-size: 20px;
-    margin-left: 16px;
+    padding-right: 10px;
+    padding: 1px 6px;
+    font-size: 18px;
+    margin-left: 6px;
 }
 
-/*boton verde*/
-.btn{
-    background-color: #70ad47;
+nav>a:hover, a:focus {
+    background-size: 100% 2px;
 }
 
+/*banner*/
+.banner{
+    background-image: url(./img/design1_image2.jpg);
+    height: 280px;
+    background-position: 2%;
+    display: flex;
+}
+
+/*Cuerpo*/
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex{
+    flex: 1 ;
+    min-width: 250px;
+    padding: 5px;
+    margin: 25px;
+    background-color: rgb(238, 238, 238);
+}
+
+.flex:first-child{
+    flex: 1;
+    /* border: 1px solid black; */
+    margin: 25px;
+}
+
+.flex:nth-child(2){
+    flex: 1;
+    /* border: 1px solid black; */
+    margin: 25px;
+}
+
+.flex:nth-child(3){
+    flex: 1;
+    /* border: 1px solid black; */
+    margin: 25px;
+}
+
+.flex div {
+    padding: 25px;
+    /* border: 1px solid black; */
+    margin: 25px;
+}
+
+.contenedor-tabla{
+    display: flex;
+    justify-content: center;
+    min-width: 400px;
+}
+
+.hy1{
+    max-width: 100%;
+    width: 500px;
+    padding: 4vh;
+}
+
+.hy2{
+    max-width: 100%;
+    padding-top: 4vh;
+}
+
+.hy3{
+    max-width: 100%;
+}
+
+.hy4{
+    max-width: 100%;
+    width: 45px;
+    margin-right: 10px;
+}
+
+#contacto{
+    display: flex ;
+    
+}
 /*titulo 2*/
 section>h2{
     position: inherit;
     text-align: center;
-    padding: 1px 0;
-    border: 2px solid black;
-    font-size: 38px;
+    padding: 4px 0;
+    font-size: 28px;
     width: 100%;
+    background-color: rgb(248, 225, 46);
+    color: rgb(46, 46, 46);
+    text-shadow: 1px 1px 2px black;
 }
-    
-/**Seccion de Articulo Home y Contact*/
-section{
-    position: relative;
-    display: inline-block;
+
+#rules{
+    position: inherit;
     width: 100%;
-    /*vertical-align: top;*/
+    text-align: center;
 }
 
-/*logo Home About Contact*/
-#logo{
-    position: absolute;
-    display: inline-block;
-    width: 8%;
-    margin-top: 60px;
-    margin-left: 45px;
-    /*border: 2px solid black;*/
-}
-
-/*Aticulo central home y contact*/
-.articulo{
-    position: absolute;
-    display: inline-block;
-    width: 45%;
-    margin-left: 260px;
-    margin-top: 40px;
-    /*border: 2px solid black;*/
-}
-
-/*texto Home*/
-article>h3{
-    font-weight: bold;
-    font-size: 22px;
-}
- /*texto general*/
 p{
-    text-indent: 40px;
     font-size: 20px;
+    text-indent: 20px;
 }
 
-section>h3{
-    font-weight: bold;
-    font-size: 22px;
+.mail{
+    color: rgb(255, 136, 24);
+    font-size: medium;
 }
 
-/*imagen task1*/
-#hy1{
-    position: absolute;
-    display: inline-block;
-    width: 25%;
-    margin-top: 40px;
-    margin-left: 1100px;
-    /*border: 2px solid black;*/
+/*tabla*/
+
+tr, th, td{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    text-align: center
+    ;
 }
 
-/*imagen about*/
-#hy2{
-    position: absolute;
-    display: inline-block;
-    width: 24%;
-    margin-top: 40px;
-    margin-left: 1100px;
-    /*border: 2px solid black;*/
+li{
+    list-style-position: inside;
+    font-size: 20px;
+    margin-left: 20px;
 }
 
-/*imagen contacto*/
-#hy3{
-    position: absolute;
-    display: inline-block;
-    width: 24%;
-    margin-top: 40px;
-    margin-left: 1100px;
-    /*border: 2px solid black;*/
+.abc{
+    list-style: lower-alpha;
+}
+
+#espacio-lista>li{
+    margin-bottom: 10px;
 }
 
 /*footer*/
 footer{
-    position: absolute;
-    width: 100%;
-    top: 750px;
-    text-align-last: center;
-    background-color: rgb(236, 235, 235);
-}
-
-.footerabout{
-    position: absolute;
-    width: 100%;
-    top: 1000px;
-    text-align-last: center;
-    background-color: rgb(236, 235, 235);
+    height: 4vh;
+    background-color: rgb(46, 46, 46);
+    color: rgb(218, 217, 216);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer>p{
-    font-size: 14px;
+    font-size: 18px;
 }
