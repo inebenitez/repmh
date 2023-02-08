@@ -238,10 +238,9 @@ td {
 
 /*Form*/
 form{
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-self: center;
-    width: 800px;
     padding: 20px;
     border-radius: 10px;
     margin: 20px;
@@ -249,15 +248,15 @@ form{
 }
 
 #registro{
-    margin-left: 130px;
+    margin: 50px 130px;
 }
 
 form label{
     display: inline-block;
 }
 
-form input[type="text"]{
-    width: 250px;
+form input[type="text"]{ 
+    width: 315px;
     padding: 4px;
     border: 0;
     border-bottom: 2px solid black;
@@ -265,20 +264,21 @@ form input[type="text"]{
     border-radius: 3px;
     margin: 8px 0;
     display: inline-block;
-}
+}∫
 
 form input[type="number"]{
     width: 100px;
+    padding: 4px;
     border: 0;
     border-bottom: 2px solid black;
     background-color: #ccc;
     border-radius: 3px;
-    margin-top: 1rem;
+    margin-top: 8px;
     display: inline-block;
 }
 
 form input[type="date"]{
-    width: 140px;
+    width: 203px;
     padding: 4px;
     border: 1px solid #f6f6f6;
     margin-right: 66px;
@@ -319,7 +319,7 @@ form input[type="radio"],form input[type="checkbox"]{
     border: 1px solid #f6f6f6;
     background-color: #f6f6f6;
     margin-top: 1rem;
-    margin-left: 350px;
+    margin-left: 47%;
 }
 
 .line1{
@@ -357,27 +357,117 @@ footer>p{
 }
 
 
-@media only screen and (min-width: 375px) and (max-width:667){
+@media only screen and (min-width: 320px) and (max-width:767px){
+
     header{
         width: 100%;
     }
-    
-    .banner{
-        width: 100%;
-        height: 20vh;
-    }
 
     footer>p{
-        font-size: 10px;
+        font-size: 15px;
+    }
+
+    h2{
+        font-size:15px;
+    }
+
+    h3{
+        font-size:14px;
+    }
+    p{
+        font-size:14px;
+    }
+
+    li{
+        font-size:14px;
+    }
+
+    nav a{
+        font-size:9px;
+        margin-left: 0;
+    }
+
+    section>h2{
+        font-size:13px;
+    }
+
+    #rules{
+        font-size:10px;
+    }
+
+    .game-info>h2{
+        font-size:13px;
     }
 
     .mapas{
-        display: flex;
         flex-direction: column;
     }
 
+    iframe{
+        width: 305px;
+    }
+
+    .info{
+        width: 320px;
+    }
+
+    .game-info-contacto div{
+        display: block;
+    }
+
+    td, tr, th{
+        font-size:10px;
+    }
+
+    .menu-form{
+        width:100%;
+    }
     form{
-        
+        padding:0;
+        font-size:15px;
+        margin: 0;
+        display: flex;
+
+    }
+
+    form input[type="text"]{ 
+        width:200px;
+    }
+
+    form input[type="date"]{
+        width: 100px;
+    }
+
+    form input[type="number"]{
+        width: 50px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1439px){
+    form{
+        font-size:18px;
+    }
+    h3{
+        font-size:16px;
+    }
+    p{
+        font-size:16px;
+    }
+
+    li{
+        font-size:16px;
+    }
+
+    section>h2{
+        font-size:18px;
+    }
+
+    #rules{
+        font-size:13px;
+    }
+
+    .game-info>h2{
+        font-size:18px;
     }
 
 }
